@@ -288,37 +288,36 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 52
 <p>
-<img ![DE_52_optimized](https://github.com/user-attachments/assets/00aa8c41-5225-4631-a28a-dd28f3582f0d) />
-</p>
+<img <img width="1257" alt="Screenshot 2025-07-04 at 1 15 55 PM" src="https://github.com/user-attachments/assets/755f1c05-2a07-44a9-8686-49390d8d0914" />
 <p>
 53
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1268" alt="Screenshot 2025-07-04 at 1 19 18 PM" src="https://github.com/user-attachments/assets/7e3d3fec-ba18-4771-8d5c-b1cb5260f390" />
 </p>
 <p>
 54
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1440" alt="DE_54" src="https://github.com/user-attachments/assets/3fd1df47-ad74-49be-b773-b502253d854e" />
 </p>
 <p>
 55
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1440" alt="DE_55" src="https://github.com/user-attachments/assets/7757853e-9794-430a-adac-cdeb72684c9a" />
 </p>
 <p>
 56
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1440" alt="DE_56" src="https://github.com/user-attachments/assets/435f8e11-4264-4d99-b2f9-383ccd792acc" />
 </p>
 <p>
 57
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1440" alt="DE_57" src="https://github.com/user-attachments/assets/8e99c250-c3af-4b42-87d6-b20fe5017cf0" />
 </p>
 <p>
 58
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <img width="1440" alt="DE_58" src="https://github.com/user-attachments/assets/b40165a9-f903-413d-a978-723e2aeb6da7" />
 </p>
 <p>
 59
