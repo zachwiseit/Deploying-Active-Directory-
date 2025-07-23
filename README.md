@@ -30,83 +30,81 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
-1
+1 If you aren't already Remote desktop into dc-1 in the Windows App. 
+  (I would recmoned Remoting into both dc-1 and client-1) 
+  To help tell which computer is which the Windows ten computer will have the windows shopping app on the task bar. 
+  The Windows server will not. 
 <p>
 <p>
 <img <img width="1440" alt="DE_1" src="https://github.com/user-attachments/assets/6aff293b-6db8-4558-b8f8-74db3ec3999e" />
 </p>
 <p>
-2
-<p>
-<img <img width="1440" alt="DE_2" src="https://github.com/user-attachments/assets/0457ffdb-4a7d-425c-ac09-e869152e9e4d" />
-</p>
-<p>
-3
+3 In dc-1 (windows server) right click start and go to Server Manager. 
 <p>
 <img <img width="1440" alt="DE_3" src="https://github.com/user-attachments/assets/61972d03-3cf9-4793-92d8-b4adb7cb52d0" />
 </p>
 <p>
-4
+4 If you see this pop up close it. 
 <p>
 <img <img width="1440" alt="DE_4" src="https://github.com/user-attachments/assets/ad413c40-88d0-4878-8a1d-a104b05f8e12" />
 </p>
 <p>
-5
+5 Click "Add roles and features".
 <p>
 <img <img width="1440" alt="DE_5" src="https://github.com/user-attachments/assets/09f53e05-00f9-4214-bf10-5e5e74703987" />
 </p>
 <p>
-6
+6 Click "Next".
 <p>
 <img <img width="1440" alt="DE_6" src="https://github.com/user-attachments/assets/39195262-5ea0-4d21-a77b-e77b569f0080" />
 </p>
 <p>
-7
+7 Click "Next". 
 <p>
 <img <img width="1440" alt="DE_7" src="https://github.com/user-attachments/assets/ea41713e-ed05-4d63-b5f0-5c96e05e241a" />
 </p>
 <p>
-8
+8 There should only be one server connection for dc-1 and click "Next".
 <p>
 <img <img width="1440" alt="DE_8" src="https://github.com/user-attachments/assets/05df12a9-e9e8-4d4b-8cef-08dc5f1067c0" />
 </p>
 <p>
-9
+9 Here check the box for "Active Directory Domain Services". 
 <p>
 <img <img width="1440" alt="DE_9" src="https://github.com/user-attachments/assets/20703338-9285-483a-b605-8238481c2584" />
 </p>
 <p>
-10
+10 This will pop up after you check the box. When it does click "Add Features". 
 <p>
 <img <img width="1440" alt="DE_10" src="https://github.com/user-attachments/assets/f785c544-40c0-4453-b301-336586ff1681" />
 </p>
 <p>
-11
+11 Click "Next".
 <p>
 <img <img width="1440" alt="DE_11" src="https://github.com/user-attachments/assets/773d3ef8-0867-48a4-b1c6-8981a47b50b0" />
 </p>
 <p>
-12
+12 Click "Next".
 <p>
 <img <img width="1440" alt="DE_12" src="https://github.com/user-attachments/assets/78a8488f-dbc6-4a72-b154-464692d7612c" />
 </p>
 <p>
-13
+13 Click "Next". 
 <p>
 <img <img width="1440" alt="DE_13" src="https://github.com/user-attachments/assets/3fce2d3a-c55a-485c-bd5f-7592da3e23f6" />
 </p>
 <p>
-14
+14 Now check the box for "Restart the Destination server automatically if required and click "yes".
 <p>
 <img <img width="1440" alt="DE_14" src="https://github.com/user-attachments/assets/0157cedd-1acb-4c47-bec2-734fbf958ba0" />
 </p>
 <p>
-15
+15 CLick "Install"
 <p>
 <img <img width="1440" alt="DE_15" src="https://github.com/user-attachments/assets/ec8bb96d-d856-4f63-85c9-c25405a60be9" />
 </p>
 <p>
-16
+16 After the configure installation has installed click "Close".
 <p>
 <img <img width="1440" alt="DE_16" src="https://github.com/user-attachments/assets/e7d987e0-26a1-4e34-bb0b-0ac6f69f742c" />
 </p>
