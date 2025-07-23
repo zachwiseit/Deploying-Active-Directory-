@@ -109,72 +109,62 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_16" src="https://github.com/user-attachments/assets/e7d987e0-26a1-4e34-bb0b-0ac6f69f742c" />
 </p>
 <p>
-17
+17 Next we are going to configure dc-1 to become a domain controler by setting up a new forest as mydomain.com.
+   In dc-1 at the top right click on the flag and then click "Promote this server to a domain controller". 
 <p>
 <img <img width="1440" alt="DE_17" src="https://github.com/user-attachments/assets/58389dc1-bfc2-4a25-ad0b-48e2e9bb9561" />
 </p>
 <p>
-18
-<p>
-<img <img width="1440" alt="DE_18" src="https://github.com/user-attachments/assets/ba978684-b496-476c-adbe-41c925b95398" />
-</p>
-<p>
-19
+19 After this pops up click the circle for "Add a new Forest". For Root domain name use mydomain.com  
+  Click "Next".
 <p>
 <img <img width="1440" alt="DE_19" src="https://github.com/user-attachments/assets/3bf3d35e-4709-465c-ae69-05294a2b318b" />
 </p>
 <p>
-20
+20 More than likely you wont need this Directory Services Restore password. That being said just set it to something simple like Password1.
+   Click "Next".
 <p>
 <img <img width="1440" alt="DE_20" src="https://github.com/user-attachments/assets/341d1b30-1d67-4ffe-bc01-9adf6cf2e394" />
 </p>
 <p>
-21
-<p>
-<img <img width="1440" alt="DE_21" src="https://github.com/user-attachments/assets/333b689f-0d3d-4e4f-b732-0f9e1795d2b2" />
-</p>
-<p>
-22
+22 If its checked then uncheck Create DNS delegation. 
+   Click "Next".
 <p>
 <img <img width="1440" alt="DE_22" src="https://github.com/user-attachments/assets/0a72d999-527e-4ef9-adff-2d619d6938a6" />
 </p>
 <p>
-23
+23 Click "Next"
 <p>
 <img <img width="1440" alt="DE_23" src="https://github.com/user-attachments/assets/cdb7086a-f0a0-419c-9276-398bb2898997" />
 </p>
 <p>
-24
+24 Click "Next"
 <p>
 <img <img width="1440" alt="DE_24" src="https://github.com/user-attachments/assets/7bcacdf4-db13-450c-91ad-37ee69a34677" />
 </p>
 <p>
-25
+25 Click "Next"
 <p>
 <img <img width="1440" alt="DE_25" src="https://github.com/user-attachments/assets/a5e7cfad-ba69-46b5-9165-090bfe1a9a8b" />
 </p>
 <p>
-26
+26 Click "Install".
 <p>
 <img <img width="1440" alt="DE_26" src="https://github.com/user-attachments/assets/2326b4f8-35f1-44f3-b7b5-1d6798a211e4" />
 </p>
 <p>
-27
+27 Now wait for the new forest to be installed. When it is finished it will automatically restart. 
+   Click "Close".
 <p>
 <img <img width="1440" alt="DE_27" src="https://github.com/user-attachments/assets/13dd16ac-0209-44fe-b336-03ba78460756" />
 </p>
 <p>
-28
+28 Click "Close".
 <p>
 <img <img width="1440" alt="DE_28" src="https://github.com/user-attachments/assets/e3b611e9-5b91-4dd8-b515-7f3016d6a894" />
 </p>
 <p>
-29
-<p>
-<img <img width="1440" alt="DE_29" src="https://github.com/user-attachments/assets/28872c1a-b610-423d-a0c3-f78b82c905db" />
-</p>
-<p>
-30
+30 Log back into dc-1.
 <p>
 <img <img width="1440" alt="DE_30" src="https://github.com/user-attachments/assets/86378893-6e3e-4644-a4a9-c0c396fe26cc" />
 </p>
