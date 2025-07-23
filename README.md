@@ -171,121 +171,137 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_30" src="https://github.com/user-attachments/assets/86378893-6e3e-4644-a4a9-c0c396fe26cc" />
 </p>
 <p>
-31 
+31 Now that we are logged back in we are going to create a domain admin user within the domain. 
+   CLose the Server Manger Dashboard.
 <p>
 <img <img width="1440" alt="DE_31" src="https://github.com/user-attachments/assets/177c848e-99c9-4b07-81dc-36593a59ab2c" />
 </p>
 <p>
-32
+32 Click Start at the bottom. 
+   Click the drop down arrow for Windows Administratie Tools.
+   From there open "Active Directory Users and Computers". 
 <p>
 <img <img width="1440" alt="DE_32" src="https://github.com/user-attachments/assets/004b4393-b745-48f1-8005-b29aa31ca60b" />
 </p>
 <p>
-33
+33 Expand it and here we will create two Organizational units.
+   One named _EMPLOYEES and the other called _ADMINS. 
 <p>
 <img <img width="1440" alt="DE_33" src="https://github.com/user-attachments/assets/1e285941-3353-47d0-b2e2-e4046d066ab1" />
 </p>
 <p>
-34
+34 Right click mydomain.com, click "New", and click "Organizational Unit".
 <p>
 <img <img width="1440" alt="DE_34" src="https://github.com/user-attachments/assets/a3ec331a-8c1b-41d5-817f-c07e707b8ee2" />
 </p>
 <p>
-35
+35 For the Name use "_EMPLOYEES". Type it in EXACTLY like that. (IF you dont then you will not be able to perform the following steps.)
+  Click "OK".
 <p>
 <img <img width="1440" alt="DE_35" src="https://github.com/user-attachments/assets/7ee8f96a-cd96-4009-a0d4-b26b8f199438" />
 </p>
 <p>
-36
+36 Do the same process to create another one except name it "_ADMINS". Needs to be exact.
 <p>
 <img <img width="1440" alt="DE_36" src="https://github.com/user-attachments/assets/d09d4060-0c79-4646-8032-190caa5adf6b" />
 </p>
 <p>
-37
+37 Right click mydomain.com and click "Refresh". 
 <p>
 <img <img width="1440" alt="DE_37" src="https://github.com/user-attachments/assets/12074c81-47f0-4435-a8a6-bbeb7779845a" />
 </p>
 <p>
-38
+38 Next we are going to create a new user. 
+   Click on the _ADMINS folder. 
+   Right click open veiw to the and click "New" then "User". 
 <p>
 <img <img width="1440" alt="DE_38" src="https://github.com/user-attachments/assets/4646df5c-d698-4405-ab12-bf4d55d3e7a8" />
 </p>
 <p>
-39
+39 Fill out
+   First name: 
+   Last Nam: 
+   User Logon name: 
+   Any name will be fine. Then click "Next". 
 <p>
 <img <img width="1440" alt="DE_39" src="https://github.com/user-attachments/assets/aa117a28-0abf-4bad-9959-a91d751db5a3" />
 </p>
 <p>
-40
+40 Choose a password you can remember, uncheck "User must change password at next logon", and check the "Password never expires".
+   click "Next". 
 <p>
 <img <img width="1440" alt="DE_40" src="https://github.com/user-attachments/assets/b891d082-a9a1-42c5-bcc9-87ac382fe8ad" />
 </p>
 <p>
-41
+41 Click "Finish".
 <p>
 <img <img width="1440" alt="DE_41" src="https://github.com/user-attachments/assets/08eb4df0-8280-43dc-b487-f987382e7d7e" />
 </p>
 <p>
-42
+42 Now the first user is created. However this user isnt an admin just because its in the folder and named as such.
+   We need to add this user to the "Domain Admins" Security Group.
 <p>
 <img <img width="1440" alt="DE_42" src="https://github.com/user-attachments/assets/c1644c54-dd4e-482e-859b-2cb12d3bfea1" />
 </p>
 <p>
-43
+43 Rit click the user and click Properties. 
 <p>
 <img <img width="1440" alt="DE_43" src="https://github.com/user-attachments/assets/3bfe27f5-a28d-4994-b473-488524a1eae6" />
 </p>
 <p>
-44
+44 Click "Member of".
 <p>
 <img <img width="1440" alt="DE_44" src="https://github.com/user-attachments/assets/a26102b3-1c11-40c0-b459-713844bdbeae" />
 </p>
 <p>
-45
+45 Click "Add". 
 <p>
 <img <img width="1440" alt="DE_45" src="https://github.com/user-attachments/assets/2927796c-a273-4b6e-802b-6483f6736465" />
 </p>
 <p>
-46
+46 In the "Enter the object names to select" type "domain admins" and click "Check Names".
 <p>
 <img <img width="1440" alt="DE_46" src="https://github.com/user-attachments/assets/5923b5a8-d592-4de2-b8a4-f10ac079e781" />
 </p>
 <p>
-47
+47 When it changes to this that means it found Domain Admins built int group. 
+   Click "OK".
 <p>
 <img <img width="1440" alt="DE_47" src="https://github.com/user-attachments/assets/0b8ca342-d5ea-4f92-88a5-71f62e02486d" />
 </p>
 <p>
-48
+48 Click "Apply" and then "OK". Now this user is a domain admin. 
 <p>
 <img <img width="1440" alt="DE_48" src="https://github.com/user-attachments/assets/13681512-5001-4612-bcf4-db66388f3de9" />
 </p>
-<p>
-49
+<p> 
+49 Next we are going to log out. Closing the connection to dc-1 and logging back in as "mydomain.com\jan_admin".
+   Right click start, click run, type "logoff", and click "OK". This will quickly log you out of the vm. 
 <p>
 <img <img width="1440" alt="DE_49" src="https://github.com/user-attachments/assets/d9ab7105-b2b0-4ce7-94e2-a90eeb9c9352" />
 </p>
 <p>
-50
+50 Log back into dc-1 as the admin you created. 
 <p>
 <img <img width="1440" alt="DE_50" src="https://github.com/user-attachments/assets/acaba768-0fa1-482a-bb79-f81259e2fc4f" />
 </p>
 <p>
-51
+51 Close the dashboard. 
+   Next we will join client-1 to the domain. 
 <p>
 <img <img width="1440" alt="DE_51" src="https://github.com/user-attachments/assets/c0bdea20-f650-4fd4-bd90-0faefee2eea1" />
 </p>
 <p>
-52
+52 If you havent already get the public IP address for client-1 and sign in as the user you created. 
 <p>
 <img <img width="1257" alt="Screenshot 2025-07-04 at 1 15 55 PM" src="https://github.com/user-attachments/assets/755f1c05-2a07-44a9-8686-49390d8d0914" />
 <p>
-53
+53 When you are loged in right click the start menu and click "System". 
 <p>
 <img <img width="1268" alt="Screenshot 2025-07-04 at 1 19 18 PM" src="https://github.com/user-attachments/assets/7e3d3fec-ba18-4771-8d5c-b1cb5260f390" />
 </p>
 <p>
-54
+54 On the right click "Rename this PC (advanced). 
 <p>
 <img <img width="1440" alt="DE_54" src="https://github.com/user-attachments/assets/3fd1df47-ad74-49be-b773-b502253d854e" />
 </p>
