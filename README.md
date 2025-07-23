@@ -306,107 +306,104 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_54" src="https://github.com/user-attachments/assets/3fd1df47-ad74-49be-b773-b502253d854e" />
 </p>
 <p>
-55
-<p>
-<img <img width="1440" alt="DE_55" src="https://github.com/user-attachments/assets/7757853e-9794-430a-adac-cdeb72684c9a" />
-</p>
-<p>
-56
+56 Under the Computer Name tab click "Change". 
 <p>
 <img <img width="1440" alt="DE_56" src="https://github.com/user-attachments/assets/435f8e11-4264-4d99-b2f9-383ccd792acc" />
 </p>
 <p>
-57
+57 In Domain box type in "mydomain.com" and click "OK".
 <p>
 <img <img width="1440" alt="DE_57" src="https://github.com/user-attachments/assets/8e99c250-c3af-4b42-87d6-b20fe5017cf0" />
 </p>
 <p>
-58
+58 Because we set the DNS settings to use dc-1's private IP address its able to locate the domain controler. 
+   Now type in the login credentials for the admin we created earlier and click "OK". 
 <p>
 <img <img width="1440" alt="DE_58" src="https://github.com/user-attachments/assets/b40165a9-f903-413d-a978-723e2aeb6da7" />
 </p>
 <p>
-59
+59 You will see this pop up welcoming you to mydomain.com. 
+   Then click "OK".
 <p>
 <img <img width="1440" alt="DE_59" src="https://github.com/user-attachments/assets/29951859-4573-4e4b-aff6-8b780fabace3" />
 </p>
 <p>
-60
+60 After this change the computer will need to restart. 
+   Click "OK".
 <p>
 <img <img width="1440" alt="DE_60" src="https://github.com/user-attachments/assets/9474bbc2-daff-4f85-bbf4-3d076af252ff" />
 </p>
 <p>
-61
+61 Close the System Properties. 
 <p>
 <img <img width="1440" alt="DE_61" src="https://github.com/user-attachments/assets/009feddf-d81f-4c0c-b910-8a9b13cdc20c" />
 </p>
 <p>
-62
+62 Click "Restart Now".
 <p>
 <img <img width="1256" alt="Screenshot 2025-07-04 at 1 29 40 PM" src="https://github.com/user-attachments/assets/bcc0a938-5524-4c9d-b935-48e48775fe2f" />
 </p>
 <p>
-63
+63 Now we are going to login to the Domain Controler and verify that client-1 is in the ADUC
+   Go back to dc-1 and in the search bar at the bottom search for Active Directory USers and Computers". 
+   Click the App when it appears. 
 <p>
 <img <img width="1440" alt="DE_63" src="https://github.com/user-attachments/assets/7189ac0c-64ee-446e-919f-322922b85cf7" />
 </p>
 <p>
-64
+64 Click the drop down arroe for mydomain.com and click the computers folder. 
+   As you can see client-1 has been added. 
 <p>
 <img <img width="1440" alt="DE_64" src="https://github.com/user-attachments/assets/3c1d505a-11e9-444a-b0e4-75e143354e14" />
 </p>
 <p>
-65
+65 If you double click it you can see all the properties of that computer. 
 <p>
 <img <img width="1440" alt="DE_65" src="https://github.com/user-attachments/assets/e834057b-6d8a-4e6a-b248-0b72e99c495b" />
 </p>
 <p>
-66
-<p>
-<img <img width="1440" alt="DE_66" src="https://github.com/user-attachments/assets/4bb940d8-375a-4bee-9c17-50a996daf556" />
-</p>
-<p>
-67
-<p>
-<img <img width="1440" alt="DE_67" src="https://github.com/user-attachments/assets/e0b77191-f00c-4b9d-aa79-f4903633b527" />
-</p>
-<p>
-68
+68 Now we are going to create a new organizational unit called clients. 
+   Right click mydomain.com
+   Click "New"
+   Click "Organizational Unit"
 <p>
 <img <img width="1440" alt="DE_68" src="https://github.com/user-attachments/assets/8e32587e-440e-4cd9-8ebe-88c8f9f70243" />
 </p>
 <p>
-69
+69 Name it _CLIENTS and click "OK".
 <p>
 <img <img width="1440" alt="DE_69" src="https://github.com/user-attachments/assets/5fe6daa6-389b-4ce7-9967-b2afa7578cef" />
 </p>
 <p>
-70
+70 Now from the computers folder grab client-1 and drop it into the _CLIENTS folder. 
 <p>
 <img <img width="1440" alt="DE_70" src="https://github.com/user-attachments/assets/11600caf-9ed0-418c-8b12-86054e95f9f4" />
 </p>
 <p>
-71
+71 Click "Yes"
+   That was made to make the organization a little bit easier. 
 <p>
 <img <img width="1440" alt="DE_71" src="https://github.com/user-attachments/assets/78499e0d-5f69-4b5c-a554-34b5f17339c4" />
 </p>
 <p>
-72
+72 Right click mydomain.com and click "Refresh".
 <p>
 <img <img width="1440" alt="DE_72" src="https://github.com/user-attachments/assets/877d726d-8e37-4ec4-883d-7f01d868c29f" />
 </p>
 <p>
-73
+73 Now we can go down the list and see everything that is there. 
+   We have our admin. 
 <p>
 <img <img width="1440" alt="DE_73" src="https://github.com/user-attachments/assets/73d4de34-26df-40a4-a23d-f8d16c46f68d" />
 </p>
 <p>
-74
+74 There is client-1 
 <p>
 <img <img width="1440" alt="DE_74" src="https://github.com/user-attachments/assets/7a82bd5a-345b-4370-b5a4-f49b49cd7749" />
 </p>
 <p>
-75
+75 Also our employees. There is nothing in their yet but we will add them shortly. 
+  The link to the Repository at the top will take you to the next portion of the tutorial. 
 <p>
 <img <img width="1440" alt="DE_75" src="https://github.com/user-attachments/assets/02d3c28e-f82c-437c-878f-b3d71c776159" />
 </p>
