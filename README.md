@@ -164,12 +164,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_28" src="https://github.com/user-attachments/assets/e3b611e9-5b91-4dd8-b515-7f3016d6a894" />
 </p>
 <p>
-30 Log back into dc-1.
+30 Log back into dc-1 but there is a slite change to that process now.
+   Now that this is a domain controller the user accounts exist in that domain. 
+  Therfore you need to login as mydomain.com\labuser instead of just lab user.
 <p>
 <img <img width="1440" alt="DE_30" src="https://github.com/user-attachments/assets/86378893-6e3e-4644-a4a9-c0c396fe26cc" />
 </p>
 <p>
-31
+31 
 <p>
 <img <img width="1440" alt="DE_31" src="https://github.com/user-attachments/assets/177c848e-99c9-4b07-81dc-36593a59ab2c" />
 </p>
