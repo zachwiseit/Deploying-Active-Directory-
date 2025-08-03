@@ -30,16 +30,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
-1 If you aren't already Remote desktop into dc-1 in the Windows App. 
-  (I would recmoned Remoting into both dc-1 and client-1) 
-  To help tell which computer is which the Windows ten computer will have the windows shopping app on the task bar. 
+1 If you aren't already Remote Desktop into dc-1 in the Windows App. 
+  (I would recommend Remoting into both dc-1 and client-1) 
+  To help tell which computer is which the Windows 10 computer will have the windows shopping app on the task bar. 
   The Windows server will not. 
 <p>
 <p>
 <img <img width="1440" alt="DE_1" src="https://github.com/user-attachments/assets/6aff293b-6db8-4558-b8f8-74db3ec3999e" />
 </p>
 <p>
-3 In dc-1 (windows server) right click start and go to Server Manager. 
+3 In dc-1 (windows server) right-click start and go to Server Manager. 
 <p>
 <img <img width="1440" alt="DE_3" src="https://github.com/user-attachments/assets/61972d03-3cf9-4793-92d8-b4adb7cb52d0" />
 </p>
@@ -99,35 +99,35 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_14" src="https://github.com/user-attachments/assets/0157cedd-1acb-4c47-bec2-734fbf958ba0" />
 </p>
 <p>
-15 CLick "Install"
+15 Click "Install"
 <p>
 <img <img width="1440" alt="DE_15" src="https://github.com/user-attachments/assets/ec8bb96d-d856-4f63-85c9-c25405a60be9" />
 </p>
 <p>
-16 After the configure installation has installed click "Close".
+16 After the configuration is complete click "Close".
 <p>
 <img <img width="1440" alt="DE_16" src="https://github.com/user-attachments/assets/e7d987e0-26a1-4e34-bb0b-0ac6f69f742c" />
 </p>
 <p>
-17 Next we are going to configure dc-1 to become a domain controler by setting up a new forest as mydomain.com.
+17 Next we are going to configure dc-1 to become a domain controller by setting up a new forest as mydomain.com.
    In dc-1 at the top right click on the flag and then click "Promote this server to a domain controller". 
 <p>
 <img <img width="1440" alt="DE_17" src="https://github.com/user-attachments/assets/58389dc1-bfc2-4a25-ad0b-48e2e9bb9561" />
 </p>
 <p>
-19 After this pops up click the circle for "Add a new Forest". For Root domain name use mydomain.com  
+19 After this pops up click the circle for "Add a new Forest". For Root domain name: use mydomain.com  
   Click "Next".
 <p>
 <img <img width="1440" alt="DE_19" src="https://github.com/user-attachments/assets/3bf3d35e-4709-465c-ae69-05294a2b318b" />
 </p>
 <p>
-20 More than likely you wont need this Directory Services Restore password. That being said just set it to something simple like Password1.
+20 More than likely you won't need this Directory Services Restore password. That being said just set it to something simple like Password1.
    Click "Next".
 <p>
 <img <img width="1440" alt="DE_20" src="https://github.com/user-attachments/assets/341d1b30-1d67-4ffe-bc01-9adf6cf2e394" />
 </p>
 <p>
-22 If its checked then uncheck Create DNS delegation. 
+22 If it's checked then uncheck Create DNS delegation. 
    Click "Next".
 <p>
 <img <img width="1440" alt="DE_22" src="https://github.com/user-attachments/assets/0a72d999-527e-4ef9-adff-2d619d6938a6" />
@@ -164,21 +164,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_28" src="https://github.com/user-attachments/assets/e3b611e9-5b91-4dd8-b515-7f3016d6a894" />
 </p>
 <p>
-30 Log back into dc-1 but there is a slite change to that process now.
+30 Log back into dc-1 but there is a slight change to that process now.
    Now that this is a domain controller the user accounts exist in that domain. 
-  Therfore you need to login as mydomain.com\labuser instead of just lab user.
+  Therefore you need to login as mydomain.com\labuser instead of just labuser.
 <p>
 <img <img width="1440" alt="DE_30" src="https://github.com/user-attachments/assets/86378893-6e3e-4644-a4a9-c0c396fe26cc" />
 </p>
 <p>
 31 Now that we are logged back in we are going to create a domain admin user within the domain. 
-   CLose the Server Manger Dashboard.
+   Close the Server Manager Dashboard.
 <p>
 <img <img width="1440" alt="DE_31" src="https://github.com/user-attachments/assets/177c848e-99c9-4b07-81dc-36593a59ab2c" />
 </p>
 <p>
 32 Click Start at the bottom. 
-   Click the drop down arrow for Windows Administratie Tools.
+   Click the drop down arrow for Windows Administrative Tools.
    From there open "Active Directory Users and Computers". 
 <p>
 <img <img width="1440" alt="DE_32" src="https://github.com/user-attachments/assets/004b4393-b745-48f1-8005-b29aa31ca60b" />
@@ -213,16 +213,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 38 Next we are going to create a new user. 
    Click on the _ADMINS folder. 
-   Right click open veiw to the and click "New" then "User". 
+   Right click open view, then click "New" then "User". 
 <p>
 <img <img width="1440" alt="DE_38" src="https://github.com/user-attachments/assets/4646df5c-d698-4405-ab12-bf4d55d3e7a8" />
 </p>
 <p>
 39 Fill out
    First name: 
-   Last Nam: 
+   Last Name: 
    User Logon name: 
-   Any name will be fine. Then click "Next". 
+   Any name will be fine. Then Click "Next".
 <p>
 <img <img width="1440" alt="DE_39" src="https://github.com/user-attachments/assets/aa117a28-0abf-4bad-9959-a91d751db5a3" />
 </p>
@@ -238,13 +238,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_41" src="https://github.com/user-attachments/assets/08eb4df0-8280-43dc-b487-f987382e7d7e" />
 </p>
 <p>
-42 Now the first user is created. However this user isnt an admin just because its in the folder and named as such.
+42 Now the first user is created. However this user isn’t an admin just because its in the folder and named as such.
    We need to add this user to the "Domain Admins" Security Group.
 <p>
 <img <img width="1440" alt="DE_42" src="https://github.com/user-attachments/assets/c1644c54-dd4e-482e-859b-2cb12d3bfea1" />
 </p>
 <p>
-43 Rit click the user and click Properties. 
+43 Right-click the user and click Properties. 
 <p>
 <img <img width="1440" alt="DE_43" src="https://github.com/user-attachments/assets/3bfe27f5-a28d-4994-b473-488524a1eae6" />
 </p>
@@ -264,7 +264,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_46" src="https://github.com/user-attachments/assets/5923b5a8-d592-4de2-b8a4-f10ac079e781" />
 </p>
 <p>
-47 When it changes to this that means it found Domain Admins built int group. 
+47 When it changes to this that means it found Domain Admins built-in group. 
    Click "OK".
 <p>
 <img <img width="1440" alt="DE_47" src="https://github.com/user-attachments/assets/0b8ca342-d5ea-4f92-88a5-71f62e02486d" />
@@ -276,7 +276,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <p> 
 49 Next we are going to log out. Closing the connection to dc-1 and logging back in as "mydomain.com\jan_admin".
-   Right click start, click run, type "logoff", and click "OK". This will quickly log you out of the vm. 
+   Right-click start, click run, type "logoff", and click "OK". This will quickly log you out of the vm. 
 <p>
 <img <img width="1440" alt="DE_49" src="https://github.com/user-attachments/assets/d9ab7105-b2b0-4ce7-94e2-a90eeb9c9352" />
 </p>
@@ -296,7 +296,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <img <img width="1257" alt="Screenshot 2025-07-04 at 1 15 55 PM" src="https://github.com/user-attachments/assets/755f1c05-2a07-44a9-8686-49390d8d0914" />
 <p>
-53 When you are loged in right click the start menu and click "System". 
+53 When you are logged in right click the start menu and click "System". 
 <p>
 <img <img width="1268" alt="Screenshot 2025-07-04 at 1 19 18 PM" src="https://github.com/user-attachments/assets/7e3d3fec-ba18-4771-8d5c-b1cb5260f390" />
 </p>
@@ -316,13 +316,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_57" src="https://github.com/user-attachments/assets/8e99c250-c3af-4b42-87d6-b20fe5017cf0" />
 </p>
 <p>
-58 Because we set the DNS settings to use dc-1's private IP address its able to locate the domain controler. 
+58 Because we set the DNS settings to use dc-1's private IP address its able to locate the domain controller. 
    Now type in the login credentials for the admin we created earlier and click "OK". 
 <p>
 <img <img width="1440" alt="DE_58" src="https://github.com/user-attachments/assets/b40165a9-f903-413d-a978-723e2aeb6da7" />
 </p>
 <p>
-59 You will see this pop up welcoming you to mydomain.com. 
+59 You will see this pop-up welcoming you to mydomain.com. 
    Then click "OK".
 <p>
 <img <img width="1440" alt="DE_59" src="https://github.com/user-attachments/assets/29951859-4573-4e4b-aff6-8b780fabace3" />
@@ -344,14 +344,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1256" alt="Screenshot 2025-07-04 at 1 29 40 PM" src="https://github.com/user-attachments/assets/bcc0a938-5524-4c9d-b935-48e48775fe2f" />
 </p>
 <p>
-63 Now we are going to login to the Domain Controler and verify that client-1 is in the ADUC
-   Go back to dc-1 and in the search bar at the bottom search for Active Directory USers and Computers". 
+63 Now we are going to login to the Domain Controller and verify that client-1 is in the ADUC
+   Go back to dc-1 and in the search bar at the bottom search for Active Directory Users and Computers". 
    Click the App when it appears. 
 <p>
 <img <img width="1440" alt="DE_63" src="https://github.com/user-attachments/assets/7189ac0c-64ee-446e-919f-322922b85cf7" />
 </p>
 <p>
-64 Click the drop down arroe for mydomain.com and click the computers folder. 
+64 Click the drop down arrow for mydomain.com and click the computers folder. 
    As you can see client-1 has been added. 
 <p>
 <img <img width="1440" alt="DE_64" src="https://github.com/user-attachments/assets/3c1d505a-11e9-444a-b0e4-75e143354e14" />
@@ -402,7 +402,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="DE_74" src="https://github.com/user-attachments/assets/7a82bd5a-345b-4370-b5a4-f49b49cd7749" />
 </p>
 <p>
-75 Also our employees. There is nothing in their yet but we will add them shortly. 
+75 Also our employees. There is nothing in there yet but we will add them shortly. 
   The link to the Repository at the top will take you to the next portion of the tutorial. 
 <p>
 <img <img width="1440" alt="DE_75" src="https://github.com/user-attachments/assets/02d3c28e-f82c-437c-878f-b3d71c776159" />
